@@ -82,7 +82,7 @@ custom repositories will be added before the default repositories.
 
 The default compiler available in the environment is `gcc`, if you want to use
 `clang` instead just add the following to `.travis.yml` and arch-travis will
-export `CC=clang` `CXX=clang++` in your build:
+export `CC=clang` or `CXX=clang++` in your build:
 
 
 ```yml
