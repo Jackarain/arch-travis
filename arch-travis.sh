@@ -45,4 +45,4 @@ docker run --rm -v "$(pwd):/build" \
     -e CONFIG_PACKAGES="$CONFIG_PACKAGES" \
     -e CONFIG_REPOS="$CONFIG_REPOS" \
     "${envs[@]}" \
-    mikkeloscar/arch-travis:latest
+    jackarain/arch-travis:latest
