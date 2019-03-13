@@ -26,7 +26,7 @@ arch:
   - "./build_script.sh"
 
 script:
-- "curl -s https://raw.githubusercontent.com/mikkeloscar/arch-travis/master/arch-travis.sh | bash"
+- "curl -s https://raw.githubusercontent.com/jackarain/arch-travis/master/arch-travis.sh | bash"
 ```
 
 `arch.repos` defines a list of custom repositories.
@@ -82,7 +82,7 @@ custom repositories will be added before the default repositories.
 
 The default compiler available in the environment is `gcc`, if you want to use
 `clang` instead just add the following to `.travis.yml` and arch-travis will
-export `CC=clang` in your build:
+export `CC=clang` `CXX=clang++` in your build:
 
 
 ```yml
