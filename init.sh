@@ -111,13 +111,17 @@ add_repositories
 upgrade_system
 install_packages
 
-if [ -n "$CC" ]; then
+#if [ -n "$CC" ]; then
   install_c_compiler
 
   # restore CC
   CC=$TRAVIS_CC
   CXX=$TRAVIS_CXX
-fi
+
+echo "$CC"
+echo "$CXX"
+
+#fi
 echo "travis_fold:end:arch_travis"
 echo ""
 
